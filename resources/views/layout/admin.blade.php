@@ -74,12 +74,12 @@
                             Gallery</a>
                     </li>
 
-                    <li
+                    {{-- <li
                         class="{{ request()->route() && request()->route()->uri() == 'admin/testimonials' ? 'active' : '' }}">
                         <a href="/admin/testimonials" title="Services"><span
                                 class="nav-icon material-icons">widgets</span>
                             Testimonials</a>
-                    </li>
+                    </li> --}}
 
                     <li
                         class="{{ request()->route() && request()->route()->uri() == 'admin/contacts' ? 'active' : '' }}">

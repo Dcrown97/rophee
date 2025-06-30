@@ -49,6 +49,16 @@
   ======================================================== -->
 </head>
 
+<style>
+    .fixed-gallery-img {
+        width: 100%;
+        height: 400px;
+        /* or any fixed height you prefer */
+        object-fit: cover;
+        border-radius: 6px;
+    }
+</style>
+
 <body>
     <!-- ======= Top Bar ======= -->
     <div id="topbar" class="d-flex align-items-center fixed-top">
