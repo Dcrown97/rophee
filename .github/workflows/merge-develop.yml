@@ -15,5 +15,5 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: 50.87.145.186
-          username: developer@rophe.singspire.com
+          username: developer@rophe.singspire.com.ng
           password: ${{ secrets.password }}
