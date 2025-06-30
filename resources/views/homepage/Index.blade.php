@@ -447,7 +447,7 @@
     <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    {{-- <section id="testimonials" class="testimonials">
         <div class="container">
             <div class="section-title">
                 <h2>Patient Testimonials</h2>
@@ -462,7 +462,7 @@
                                         <img src="{{ '/storage/' . $testimonial->image }}" class="testimonial-img"
                                             alt="">
                                         <h3>{{ $testimonial->title }}</h3>
-                                        {{-- <h4>Ceo &amp; Founder</h4> --}}
+                                        <h4>Ceo &amp; Founder</h4>
                                         <p>
                                             <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                             {!! $testimonial->content !!}
@@ -471,7 +471,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End testimonial item -->
                         @endforeach
                     @endif
                 </div>
@@ -479,7 +478,8 @@
             </div>
 
         </div>
-    </section><!-- End Testimonials Section -->
+    </section> --}}
+    <!-- End Testimonials Section -->
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
@@ -502,15 +502,15 @@
                                 <a href="{{ asset('storage' . '/' . $gallery->photo) ?? '' }}" class="galelry-lightbox">
                                     <img data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700"
                                         src="{{ asset('storage' . '/' . $gallery->photo) ?? '' }}" alt=""
-                                        class="img-fluid">
+                                        class="img-fluid fixed-gallery-img">
                                 </a>
                             </div>
                         </div>
                     @endforeach
                 @endif
             </div>
-
         </div>
+        
     </section><!-- End Gallery Section -->
 
     <!-- ======= Contact Section ======= -->
